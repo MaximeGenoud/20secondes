@@ -16,7 +16,7 @@ body{margin:0}img{max-width:100%}[hidden]{display:none!important}
   --ink:#12141a;
   --muted:#697080;
   --line:#e2e5ea;
-  --brand:#ffd21f;
+  --brand:#4227F5;
   --brand-ink:#12141a;
   --live:#d9261c;
   --live-soft:#fdeceb;
@@ -27,13 +27,13 @@ body{margin:0}img{max-width:100%}[hidden]{display:none!important}
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
     --bg:#0e1014;--surface:#161920;--ink:#eef0f4;--muted:#9aa1b0;--line:#272b35;
-    --brand:#ffd21f;--brand-ink:#12141a;--live:#ff5b4f;--live-soft:#2a1816;--link:#7ea2ff;
+    --brand:#4227F5;--brand-ink:#12141a;--live:#ff5b4f;--live-soft:#2a1816;--link:#7ea2ff;
     color-scheme:dark;
   }
 }
 :root[data-theme="dark"]{
   --bg:#0e1014;--surface:#161920;--ink:#eef0f4;--muted:#9aa1b0;--line:#272b35;
-  --brand:#ffd21f;--brand-ink:#12141a;--live:#ff5b4f;--live-soft:#2a1816;--link:#7ea2ff;
+  --brand:#4227F5;--brand-ink:#12141a;--live:#ff5b4f;--live-soft:#2a1816;--link:#7ea2ff;
   color-scheme:dark;
 }
 body{background:var(--bg);color:var(--ink);font-family:var(--font-body);font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased}
@@ -193,7 +193,7 @@ function sorted(){return S.updates.slice().sort((a,b)=>a.ts<b.ts?1:a.ts>b.ts?-1:
 function uid(){return 'u'+Date.now().toString(36)+Math.random().toString(36).slice(2,6)}
 
 function shell(){
- return '<header class="top"><div class="top-in"><a class="logo" href="#" aria-label="24 Minutes"><img src="logo.png" alt="20 Minutes" height="38"></a>'
+ return '<header class="top"><div class="top-in"><a class="logo" href="#" aria-label="24 Minutes"><img src="logo.svg" alt="20 Minutes" height="38"></a>'
  +'<nav class="tabs"><a class="tab on" href="#">News</a><a class="tab" href="#">Vidéos</a></nav>'
  +'<button class="disc" type="button">Découvrir</button><span class="who">'+ICON.who+'</span></div></header>'
  +'<nav class="nav" aria-label="Rubriques"><div class="nav-in">'+NAV.map(n=>'<a href="#">'+esc(n)+'</a>').join('')+'</div></nav>'
