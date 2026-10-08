@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>24 Secondes</title>
+<title>20 minutes</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600;700&display=swap">
 <style>
@@ -193,13 +193,13 @@ function sorted(){return S.updates.slice().sort((a,b)=>a.ts<b.ts?1:a.ts>b.ts?-1:
 function uid(){return 'u'+Date.now().toString(36)+Math.random().toString(36).slice(2,6)}
 
 function shell(){
- return '<header class="top"><div class="top-in"><a class="logo" href="#" aria-label="24 Secondes"><span class="mark">24</span><span class="word">Secondes</span></a>'
+ return '<header class="top"><div class="top-in"><a class="logo" href="#" aria-label="24 Minutes"><img src="logo.png" alt="20 Minutes" height="38"></a>'
  +'<nav class="tabs"><a class="tab on" href="#">News</a><a class="tab" href="#">Vidéos</a></nav>'
  +'<button class="disc" type="button">Découvrir</button><span class="who">'+ICON.who+'</span></div></header>'
  +'<nav class="nav" aria-label="Rubriques"><div class="nav-in">'+NAV.map(n=>'<a href="#">'+esc(n)+'</a>').join('')+'</div></nav>'
  +'<div class="ad" aria-hidden="true">Publicité</div>'
  +'<div id="login"></div><div id="editor"></div><main class="wrap" id="article"></main>'
- +'<footer><div class="foot"><span class="grow">© 2026 24 Secondes · média fictif créé pour un cours</span><button class="secret" type="button" data-act="login" aria-label="Rédaction"></button></div></footer>';
+ +'<footer><div class="foot"><span class="grow">© 2026 20 minutes ICP · média fictif créé pour un cours</span><button class="secret" type="button" data-act="login" aria-label="Rédaction"></button></div></footer>';
 }
 
 function renderArticle(){
