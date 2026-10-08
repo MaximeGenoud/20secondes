@@ -171,7 +171,7 @@ const auth=getAuth(app);
 const db=getFirestore(app);
 
 const MOIS=['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre'];
-const NAV=['Home','Suisse Romande','Suisse','Météo','Monde','Sports','Stars & Co','Économie','Insolite','Life'];
+const NAV=['Home','Territoires','France','Météo','Monde','Sports','Stars & Co','Économie','Insolite','Life'];
 const el=id=>document.getElementById(id);
 const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const ICON={
