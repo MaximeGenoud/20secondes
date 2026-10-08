@@ -193,7 +193,7 @@ function sorted(){return S.updates.slice().sort((a,b)=>a.ts<b.ts?1:a.ts>b.ts?-1:
 function uid(){return 'u'+Date.now().toString(36)+Math.random().toString(36).slice(2,6)}
 
 function shell(){
- return '<header class="top"><div class="top-in"><a class="logo" href="#" aria-label="24 Minutes"><img src="logo.svg" alt="20 Minutes" height="38"></a>'
+ return '<header class="top"><div class="top-in"><a class="logo" href="#" aria-label="24 Minutes"><img src="logo.png" alt="20 Minutes" height="38"></a>'
  +'<nav class="tabs"><a class="tab on" href="#">News</a><a class="tab" href="#">Vidéos</a></nav>'
  +'<button class="disc" type="button">Découvrir</button><span class="who">'+ICON.who+'</span></div></header>'
  +'<nav class="nav" aria-label="Rubriques"><div class="nav-in">'+NAV.map(n=>'<a href="#">'+esc(n)+'</a>').join('')+'</div></nav>'
